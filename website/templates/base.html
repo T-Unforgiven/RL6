@@ -14,6 +14,7 @@
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         crossorigin="anonymous"
       />
+      <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 
       <title>{% block tittle %}Home{% endblock %}</title>
     </head>
@@ -26,6 +27,7 @@
                 <div class="navbar-nav">
                     {% if user.is_authenticated %}
                     <a class="nav-item nav-link" id="home" href="/">Home</a>
+                    <a class="nav-item nav-link" id="manuals" href="/manuals">Manuals</a>
                     <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
                     {% else %}
                     <a class="nav-item nav-link" id="login" href="/login">Login</a>
@@ -60,6 +62,8 @@
             {% block content %}
             {% endblock %}
         </div>
+        {% block homepage %}
+        {% endblock %}
         <script
         src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

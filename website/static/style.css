@@ -1,0 +1,17 @@
+#header{
+    text-align: center;
+}
+
+#mainpage{
+    width: 100vh;
+    background-size: cover;
+}
+
+#subjlist{
+    text-align: center;
+}
+
+.listitem{
+    text-align: center;
+    text-decoration: none;
+}

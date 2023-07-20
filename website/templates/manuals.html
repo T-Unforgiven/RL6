@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block tittle %}Manuals{% endblock %}
+
+{% block content %}
+
+<h2 id="subjlist"><u>Список предметов:</u></h2>
+<form method="POST" action="/manuals/upload" enctype="multipart/form-data">
+    <input class="ok" type="file" name="file">
+    <button class="op">Submit</button>
+</form>
+
+<form method="GET" action="/manuals/download/" enctype="multipart/form-data">
+    <input class="ok" type="file" name="file">
+    <button class="op">Submit</button>
+</form>
+
+{% endblock %}
+
+
+<div class="dropdown">
+    <button>Аналитическая геометрия</button>
+    <div class="content">
+     <a href="http://fn.bmstu.ru/educational-work-fs-12/control-activities-fn-12" target="_blank"> Тиопвые варианты ДЗ и РК</a>
+     <a>vnokjsvanjk</a>
+    </div>
+ </div>
+
+
+
+
+<a class="listitem">Аналитическая геометрия</a>
+    <a class="listitem">Инженерная графика</a>
+    <li class="listitem">Компьютерное моделирование</a>
+    <li class="listitem">Иностранный язык</a>
+    <li class="listitem">История России</a>
+    <li class="listitem">Математический анализ</a>
+    <a class="listitem">Начертательная геометрия</a>
+    <a class="listitem">Информатика</a>
+    <a class="listitem">Физическая культура и спорт</a>
+    <a class="listitem">Социология</a>
+    <a class="listitem">Интегралы и дифференциальные уравнения</a>
+    <a class="listitem">Линейная алгебра и функции нескольких переменных</a>
+    <a class="listitem">Физика</a>
+    <a class="listitem">Химия</a>
