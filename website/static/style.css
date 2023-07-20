@@ -11,7 +11,55 @@
     text-align: center;
 }
 
-.listitem{
-    text-align: center;
+.dropdown{
+    display: inline-block;
+}
+
+#main_button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;   
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a{
+    display: block;
+    color: black;
     text-decoration: none;
+    padding: 10px 15px;
+    width: 200px;
+}
+
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 80%);
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+#main_button:hover{
+    background-color: hsl(0, 0%, 60%);
+}
+
+.dropdown a:hover{
+    background-color: hsl(0, 0%, 70%);
+}
+
+#secondary_button:hover{
+    background-color: hsl(0, 0%, 70%);
+}
+
+#secondary_button{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: none;
+    width: 200px;
 }

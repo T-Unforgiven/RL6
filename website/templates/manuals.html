@@ -8,10 +8,22 @@
     <button class="op">Submit</button>
 </form>
 
-<form method="GET" action="/manuals/download/" enctype="multipart/form-data">
+<form method="GET" action="/manuals/download/8" enctype="multipart/form-data">
     <input class="ok" type="file" name="file">
     <button class="op">Submit</button>
 </form>
+
+<p>То, что сверху - это техническое оформление, которое нужно, для грамотного хранения файлов в бд. На этой странице должны быть распложены предметы в столбик и взаимодействовать с ними можно будет примерно так:</p>
+
+<div class="dropdown">
+    <button id="main_button">Математический анализ</button>
+    <div class="content">
+        <form  method="GET" action="/manuals/download/10" enctype="multipart/form-data">
+        <button id="secondary_button">Лекции</button>
+        </form>
+        <a href="http://fn.bmstu.ru/educational-work-fs-12/control-activities-fn-12" target="_blank">Подготовка к РК и ДЗ</a>
+    </div>
+</div>
 
 {% endblock %}
 
